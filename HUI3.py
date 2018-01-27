@@ -44,7 +44,7 @@ def get_score(Vision, Hearing, Speech, Ambulation, Dexterity, Emotion, Cognition
         raise ValueError('Cognition level can take only 1, 2, 3, 4, 5 or 6')
     if not (Pain in [1, 2, 3, 4, 5]):
         raise ValueError('Pain level can take only 1, 2, 3, 4, 5')
-
+    #u* = 1.371 (b1 * b2 * b3 * b4 * b5 * b6 * b7 * b8) - 0.371
     print("HUI3 Multi-Attribute Utility Function")
     score = C1
     score *= MultCoefficients['Vision'][Vision - 1]
